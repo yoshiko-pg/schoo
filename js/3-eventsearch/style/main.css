@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #393e46;
+  color: #eee;
+  font-size: 1.4rem;
+  font-family: 'Raleway', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: normal;
+}
+#search-form {
+  font-size: 0;
+  margin: 50px auto;
+}
+#search-form #search-input,
+#search-form button {
+  font-family: 'Raleway', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  line-height: 4rem;
+  padding: 0 2rem;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+#search-form #search-input:focus,
+#search-form button:focus {
+  box-shadow: 0 0 7px 0 rgba(255,255,255,0.5);
+}
+#search-form #search-input {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: none;
+  width: 300px;
+}
+#search-form button {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #00adb5;
+  border: 1px solid #00adb5;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+#search-form button:hover,
+#search-form button:focus {
+  background-color: #00ecf7;
+  border: 1px solid #00ecf7;
+}
+#event-list {
+  width: 700px;
+  margin: 30px auto;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+#event-list:empty::before {
+  content: 'Not found';
+}
+#event-list li {
+  margin: 20px;
+  text-align: left;
+}
+#event-list li time {
+  display: inline-block;
+  width: 5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eb586f;
+  color: #fff;
+  margin-right: 2rem;
+  position: relative;
+}
+#event-list li time::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left: 6px solid #eb586f;
+}
+#event-list li a {
+  display: inline-block;
+  width: calc(100% - 70px);
+  height: 3.5rem;
+  vertical-align: middle;
+  line-height: 3.5rem;
+  background-color: #393e46;
+  color: #eee;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+#event-list li a:hover,
+#event-list li a:focus {
+  border-bottom: 2px dashed #00adb5;
+}

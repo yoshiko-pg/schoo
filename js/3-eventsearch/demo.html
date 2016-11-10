@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>同じドメインのデータを取得する</title>
+</head>
+<body>
+  <h1>Event Search</h1>
+  <p>
+  デベロッパーツールのコンソールタブで結果を確認できます。<br>
+  <br>
+  Windows: Ctrl+Shift+J<br>
+  mac: Command+Option+J
+  </p>
+  <script>
+    (function() {
+      'use strict';
+      var request = new XMLHttpRequest();
+      request.open('GET', 'data.json');
+
+      request.onload = function() {
+        console.log(this.response);
+      };
+
+      request.onerror = function() {
+        console.error('Error!');
+      };
+
+      request.send();
+    }());
+  </script>
+</body>
+</html>
